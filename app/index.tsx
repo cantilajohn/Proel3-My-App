@@ -1,5 +1,5 @@
-import React, { useContext } from 'react';
-import { View, Text, StyleSheet } from 'react-native';
+import { useContext } from 'react';
+import { StyleSheet, Text, View } from 'react-native';
 import { ThemeContext } from '../ThemeContext';
 
 export default function Home() {
@@ -8,7 +8,7 @@ export default function Home() {
   return (
     <View style={[styles.container, { backgroundColor: theme === 'light' ? '#f5f5f5' : '#121212' }]}>
       <Text style={[styles.text, { color: theme === 'light' ? '#121212' : '#fff' }]}>
-        BADING!
+        State Management!
       </Text>
     </View>
   );
